@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -133,17 +133,6 @@ F 3 "" H 5850 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L custom-symbols:itsy_bitsy U1
-U 1 1 602F6D1C
-P 5950 1050
-F 0 "U1" H 6400 1215 50  0000 C CNN
-F 1 "itsy_bitsy" H 6400 1124 50  0000 C CNN
-F 2 "Socket:itsy_bitsy" H 6150 400 50  0001 C CNN
-F 3 "" H 6150 400 50  0001 C CNN
-	1    5950 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0104
 U 1 1 602F7258
 P 5850 1250
@@ -161,7 +150,7 @@ L Device:R_POT RV3
 U 1 1 602F751B
 P 4950 2450
 F 0 "RV3" H 4880 2496 50  0000 R CNN
-F 1 "R_POT" H 4880 2405 50  0000 R CNN
+F 1 "POT3" H 4880 2405 50  0000 R CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4950 2450 50  0001 C CNN
 F 3 "~" H 4950 2450 50  0001 C CNN
 	1    4950 2450
@@ -172,7 +161,7 @@ L Device:R_POT RV2
 U 1 1 602F75E6
 P 4950 2000
 F 0 "RV2" H 4880 2046 50  0000 R CNN
-F 1 "R_POT" H 4880 1955 50  0000 R CNN
+F 1 "POT2" H 4880 1955 50  0000 R CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4950 2000 50  0001 C CNN
 F 3 "~" H 4950 2000 50  0001 C CNN
 	1    4950 2000
@@ -183,7 +172,7 @@ L Device:R_POT RV1
 U 1 1 602F762E
 P 4950 1550
 F 0 "RV1" H 4880 1596 50  0000 R CNN
-F 1 "R_POT" H 4880 1505 50  0000 R CNN
+F 1 "POT1" H 4880 1505 50  0000 R CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4950 1550 50  0001 C CNN
 F 3 "~" H 4950 1550 50  0001 C CNN
 	1    4950 1550
@@ -194,7 +183,7 @@ L Device:R_POT RV0
 U 1 1 602F767B
 P 4950 1100
 F 0 "RV0" H 4880 1146 50  0000 R CNN
-F 1 "R_POT" H 4880 1055 50  0000 R CNN
+F 1 "POT0" H 4880 1055 50  0000 R CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4950 1100 50  0001 C CNN
 F 3 "~" H 4950 1100 50  0001 C CNN
 	1    4950 1100
@@ -292,4 +281,15 @@ Wire Wire Line
 Connection ~ 4400 2250
 Wire Wire Line
 	4400 2250 4400 2700
+$Comp
+L desklamp-rescue:itsy_bitsy-custom-symbols U1
+U 1 1 602F6D1C
+P 5950 1050
+F 0 "U1" H 6400 1215 50  0000 C CNN
+F 1 "itsy_bitsy" H 6400 1124 50  0000 C CNN
+F 2 "Socket:itsy_bitsy" H 6150 400 50  0001 C CNN
+F 3 "" H 6150 400 50  0001 C CNN
+	1    5950 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
