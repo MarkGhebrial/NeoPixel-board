@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:desklamp-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -146,17 +147,6 @@ $EndComp
 Text GLabel 5000 5100 0    50   Input ~ 0
 Signal
 $Comp
-L Device:R_POT RV3
-U 1 1 602F751B
-P 4950 2450
-F 0 "RV3" H 4880 2496 50  0000 R CNN
-F 1 "POT3" H 4880 2405 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4950 2450 50  0001 C CNN
-F 3 "~" H 4950 2450 50  0001 C CNN
-	1    4950 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_POT RV2
 U 1 1 602F75E6
 P 4950 2000
@@ -207,10 +197,6 @@ Wire Wire Line
 	5350 1700 5350 1650
 Wire Wire Line
 	5350 1650 5850 1650
-Wire Wire Line
-	4950 2600 5550 2600
-Wire Wire Line
-	5550 2600 5550 1850
 Wire Wire Line
 	5550 1850 5850 1850
 $Comp
@@ -274,10 +260,6 @@ Wire Wire Line
 Connection ~ 4400 1800
 Wire Wire Line
 	4400 1800 4400 2250
-Wire Wire Line
-	4950 2300 4950 2250
-Wire Wire Line
-	4950 2250 4400 2250
 Connection ~ 4400 2250
 Wire Wire Line
 	4400 2250 4400 2700
@@ -290,6 +272,88 @@ F 1 "itsy_bitsy" H 6400 1124 50  0000 C CNN
 F 2 "Socket:itsy_bitsy" H 6150 400 50  0001 C CNN
 F 3 "" H 6150 400 50  0001 C CNN
 	1    5950 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 60334B3A
+P 5450 2550
+F 0 "JP1" V 5404 2617 50  0000 L CNN
+F 1 "Pot3 Jumper" V 5495 2617 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels" H 5450 2550 50  0001 C CNN
+F 3 "~" H 5450 2550 50  0001 C CNN
+	1    5450 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 60334D9B
+P 4900 2450
+F 0 "J3" H 5000 2400 50  0000 C CNN
+F 1 "POT3" H 5050 2500 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4900 2450 50  0001 C CNN
+F 3 "~" H 4900 2450 50  0001 C CNN
+	1    4900 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 2250 5100 2350
+Wire Wire Line
+	4400 2250 5100 2250
+Wire Wire Line
+	5300 2550 5100 2550
+Wire Wire Line
+	5450 2300 5550 2300
+Wire Wire Line
+	5550 2300 5550 1850
+Wire Wire Line
+	5450 2800 7350 2800
+Wire Wire Line
+	7350 2800 7350 1850
+Wire Wire Line
+	7350 1850 6950 1850
+$Comp
+L Mechanical:MountingHole MH0
+U 1 1 603373F3
+P 1650 4000
+F 0 "MH0" H 1750 4046 50  0000 L CNN
+F 1 "MountingHole" H 1750 3955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 4000 50  0001 C CNN
+F 3 "~" H 1650 4000 50  0001 C CNN
+	1    1650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 6033746D
+P 1650 4250
+F 0 "MH1" H 1750 4296 50  0000 L CNN
+F 1 "MountingHole" H 1750 4205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 4250 50  0001 C CNN
+F 3 "~" H 1650 4250 50  0001 C CNN
+	1    1650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 603374C5
+P 1650 4500
+F 0 "MH2" H 1750 4546 50  0000 L CNN
+F 1 "MountingHole" H 1750 4455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 4500 50  0001 C CNN
+F 3 "~" H 1650 4500 50  0001 C CNN
+	1    1650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 60337515
+P 1650 4750
+F 0 "MH3" H 1750 4796 50  0000 L CNN
+F 1 "MountingHole" H 1750 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1650 4750 50  0001 C CNN
+F 3 "~" H 1650 4750 50  0001 C CNN
+	1    1650 4750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
